@@ -1,0 +1,48 @@
+//variables
+@import 'base/globals';
+@import 'base/colors';
+@import 'base/fonts';
+
+//plugins
+@import 'sass-mq/mq';
+
+//base styles and mixins
+@import 'normalize.css/normalize';
+@import 'base/mixins';
+//uncomment to use custom grid
+@import 'base/mixins-grid';
+@import 'base/base';
+@import 'base/content-typography';
+
+@import 'layouts/layout';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+//modules here
+//@import 'modules*/*.*
+//' NOTE: import modules manually;
+//utility come last so they can overwrite stuff...
+@import 'base/utility';
+
+//states and themes
+@import 'layouts/states';
+//@import 'layouts/themes';
+//@import 'layouts/swatches';
+
+//utility styles
+@import 'base/print';
+@import 'base/dev';
+
+#demo-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: image-width('subfolder/png-demo.png');
+    height: image-height('subfolder/png-demo.png');
+    background: image-url('subfolder/png-demo.png');
+
+    .no-csstransitions & {
+        display: none;
+    }
+}

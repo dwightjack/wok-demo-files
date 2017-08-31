@@ -1,0 +1,23 @@
+{% extends 'templates/_default.nunj.html' %}
+
+{% block head %}
+    <!-- build:css /assets/stylesheets/application-demo.min.css -->
+    <link rel="stylesheet" href="/assets/stylesheets/application-demo.css" />
+    <!-- endbuild -->
+{% endblock %}
+
+{% block main %}
+    <h1>Hello World</h1>
+    <p>{{demo.msg}}</p>
+
+    <p id="demo-bg">
+
+    </p>
+
+
+    <p><img src="/assets/images/photo-demo.jpg" alt="" width="500"></p>
+    <p><img src="/assets/images/subfolder/png-demo.png" alt=""></p>
+    <p><img src="/assets/images/drawing-demo.svg" alt=""></p>
+    <p><img src="/assets/images/gif-demo.gif" alt=""></p>
+
+{% endblock %}
